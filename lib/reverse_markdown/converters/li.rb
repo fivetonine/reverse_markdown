@@ -15,9 +15,9 @@ module ReverseMarkdown
       def prefix_for(node)
         if node.parent.name == 'ol'
           index = node.parent.xpath('li').index(node)
-          "#{index.to_i + 1}. "
+          "  #{index.to_i + 1}. "
         else
-          '• '
+          '  • '
         end
       end
 
