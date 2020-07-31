@@ -17,7 +17,7 @@ module ReverseMarkdown
           index = node.parent.xpath('li').index(node)
           "#{index.to_i + 1}. "
         else
-          '- '
+          '• '
         end
       end
 
